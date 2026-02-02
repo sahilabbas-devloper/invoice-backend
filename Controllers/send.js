@@ -5,7 +5,7 @@
 
 
  try {
-    const invoicenum =  req.query.data;
+    const invoicenum =  req.query.data; 
     const billdata = await Bill.findOne({ invoicenumber : invoicenum})
     if (!billdata) {
         res.json("invoice is not found.")
